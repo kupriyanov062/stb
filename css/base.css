@@ -731,3 +731,9 @@ option{
 .line_link{
     text-decoration: underline;
 }
+
+@media (max-width:767px) {
+    .featured-item{
+        text-align: center;
+    }
+}
