@@ -183,7 +183,7 @@ asd
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group mb-5">
-                    <select class="form-control form-select" aria-label="Default select example" name="typeProject" required="required">
+                    <select class="form-control form-select" aria-label="Default select example" name="typeProject" required oninvalid="this.setCustomValidity('Please complete this field.')">
                       <option value="Affiliates">Affiliates</option>
                       <option value="Advertiser">Advertiser</option>
                     </select>
@@ -192,13 +192,13 @@ asd
                 </div>
                 <div class="col-md-12">
                   <div class="form-group mb-5">
-                    <input class="form-control"  type="text" name="name" placeholder="Nickname / Company Name">
-                    <div class="help-block with-errors">234434</div>
+                    <input class="form-control"  type="text" name="name" placeholder="Nickname / Company Name" required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group mb-5">
-                    <select class="form-control form-select" aria-label="Default select example" name="contactType">
+                    <select class="form-control form-select" aria-label="Default select example" name="contactType" required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
                       <option selected value="email">Email</option>
                       <option value="telegram">Telegram</option>
                       <option value="skype">Skype</option>
@@ -208,13 +208,13 @@ asd
                 </div>
                 <div class="col-md-8">
                   <div class="form-group mb-5">
-                    <input class="form-control" id="form_name2" type="text" name="contactField"  required="required" data-error="Name is required.">
+                    <input class="form-control" id="form_name2" type="text" name="contactField"   required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <textarea id="form_message" name="message" class="h-auto" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                <textarea id="form_message" name="message" class="h-auto" placeholder="Message" rows="4"></textarea>
                 <div class="help-block with-errors"></div>
               </div>
               <label>
