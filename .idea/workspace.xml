@@ -7,6 +7,10 @@
     <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/shortcodes.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/shortcodes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/theme-script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +64,10 @@
       <workItem from="1699550252982" duration="5851000" />
       <workItem from="1699594793836" duration="175000" />
       <workItem from="1699595056019" duration="188000" />
-      <workItem from="1699595267336" duration="739000" />
+      <workItem from="1699595267336" duration="7064000" />
+      <workItem from="1699615319012" duration="1421000" />
+      <workItem from="1699617051309" duration="23000" />
+      <workItem from="1699617134350" duration="5274000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
@@ -83,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699562315051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cpad 768 fix style">
+      <created>1699596016505</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699596016505</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

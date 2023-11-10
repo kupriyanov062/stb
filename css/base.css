@@ -737,3 +737,23 @@ option{
         text-align: center;
     }
 }
+
+
+.message_send{
+    text-align: center;
+    color: #008000;
+    font-size: 14px;
+    height: 47px;
+}
+
+@media (min-width:416px) {
+    .message_send{
+        height: 47px;
+    }
+}
+
+@media (max-width:416px) {
+    .message_send{
+        height: 70px;
+    }
+}

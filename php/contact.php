@@ -2,19 +2,27 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get the form fields and remove whitespace.
-    $message     = strip_tags(trim($_POST["message"]));
-    $name        = strip_tags(trim($_POST["name"]));
-    $typeProject = strip_tags(trim($_POST["typeProject"]));
-    $contactType = strip_tags(trim($_POST["contactType"]));
+    $message      = strip_tags(trim($_POST["message"]));
+    $name         = strip_tags(trim($_POST["name"]));
+    $typeProject  = strip_tags(trim($_POST["typeProject"]));
+    $contactType  = strip_tags(trim($_POST["contactType"]));
     $contactField = strip_tags(trim($_POST["contactField"]));
-    $agree       = strip_tags(trim($_POST["agree"]));
-        if ($name == null) {
-            http_response_code(200);
-            $data = ['sss' => 123];
-            echo json_encode($data);
+    $agree        = strip_tags(trim($_POST["agree"]));
 
+    if ($contactType == 'email') {
+        if (!filter_var($contactField, FILTER_VALIDATE_EMAIL)) {
+            http_response_code(200);
+            echo "Email is not correct";
+            exit();
         }
+    }
+    if (($name == '') or ($contactField == '') or ($message == '')) {
+        http_response_code(200);
+        echo "Not all fields are filled in";
+        exit();
+    }
     if ($agree == 'on') {
+
         $botToken = '6830693524:AAEgrQzrIe-P3bNhSXNSKely9pH8bGk9nOs';
         $chatId   = '-1002097679361';
 
@@ -50,8 +58,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(500);
-        echo "Oops! Something went wrong, and we couldn't send your message to the Telegram bot.";
+        http_response_code(200);
+        echo "You must agree to the terms";
+        exit();
     }
 }
 /*

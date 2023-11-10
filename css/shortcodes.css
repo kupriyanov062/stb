@@ -393,3 +393,29 @@ a.white-btn:hover, .white-btn:hover, a.white-btn:focus, .white-btn:focus { backg
 .accordion-body { color: var(--theme-body-color); border-top: 1px solid var(--theme-border-light-color); font-family: var(--theme-typography-body-font-family); font-weight: 400; font-size: 15px; }
 
 
+
+@media (max-width:416px) {
+    .col-12.marquee-block{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row.marquee-block-row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width:417px) and (max-width:1000px) {
+    .col-12.marquee-block{
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row.marquee-block-row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
