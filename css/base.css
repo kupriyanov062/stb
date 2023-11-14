@@ -502,10 +502,14 @@ url("../fonts/flaticon_mycollection.svg?54f7cae4c26e0f4d4f57388fb9a67e72#flatico
 }
 
 .flaticon-brand:before {
-
     content: "\f122";
+}
+.flaticon-brand{
 
 }
+
+
+
 
 .flaticon-seo-1:before {
 

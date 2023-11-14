@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix style">
+    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advertiser.html" beforeDir="false" afterPath="$PROJECT_DIR$/advertiser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affiliates.html" beforeDir="false" afterPath="$PROJECT_DIR$/affiliates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terms-and-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-and-conditions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,15 @@
       <workItem from="1699615319012" duration="1421000" />
       <workItem from="1699617051309" duration="23000" />
       <workItem from="1699617134350" duration="5595000" />
-      <workItem from="1699623938982" duration="996000" />
+      <workItem from="1699623938982" duration="1157000" />
+      <workItem from="1699699243857" duration="14000" />
+      <workItem from="1699890048591" duration="14000" />
+      <workItem from="1699891923544" duration="49000" />
+      <workItem from="1699892781412" duration="27000" />
+      <workItem from="1699892898916" duration="24000" />
+      <workItem from="1699893047753" duration="9000" />
+      <workItem from="1699897781111" duration="36000" />
+      <workItem from="1699897855116" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
@@ -113,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699623099974</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cpad 768 fix logo">
+      <created>1699625561348</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699625561348</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="cpad 768 fix style" />
-    <option name="LAST_COMMIT_MESSAGE" value="cpad 768 fix style" />
+    <MESSAGE value="cpad 768 fix logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="cpad 768 fix logo" />
   </component>
 </project>
