@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/theme-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/theme-script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms-and-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-and-conditions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +77,18 @@
       <workItem from="1699893047753" duration="9000" />
       <workItem from="1699897781111" duration="36000" />
       <workItem from="1699897855116" duration="11000" />
+      <workItem from="1699950234059" duration="1262000" />
+      <workItem from="1699970955141" duration="49000" />
+      <workItem from="1699971032694" duration="647000" />
+      <workItem from="1699999710595" duration="606000" />
+      <workItem from="1700000493891" duration="106000" />
+      <workItem from="1700000642306" duration="38000" />
+      <workItem from="1700000700986" duration="44000" />
+      <workItem from="1700000775889" duration="54000" />
+      <workItem from="1700000859771" duration="134000" />
+      <workItem from="1700001027793" duration="4549000" />
+      <workItem from="1700028746257" duration="1045000" />
+      <workItem from="1700031461370" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
@@ -121,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699625561348</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cpad 768 fix logo">
+      <created>1699950270796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699950270796</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

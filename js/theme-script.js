@@ -244,6 +244,7 @@ function contactform() {
                     $('.message_send').empty();
                     if (data == 'Thank you! Your message has been sent successfully. Our managers will contact you.') {
                         var targetElement = $('.message_send');
+                        $('#contact-form')[0].reset();
                         var newDiv = $('<p style="color: green">' + data + ' </p>');
                         targetElement.append(newDiv);
                     } else {
@@ -367,4 +368,19 @@ $(document).ready(function () {
 $(window).on('load', function () {
     preloader();
 });
+
+
+const element = document.querySelector(".js-choice")
+
+const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: ""
+});
+
+const elementMail = document.querySelector(".js-choice-mail");
+const choicesMail = new Choices(elementMail, {
+    searchEnabled: false,
+    itemSelectText: ""
+});
+
 
