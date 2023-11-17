@@ -1,34 +1,65 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+    $data_error = [];
     // Get the form fields and remove whitespace.
     $message      = strip_tags(trim($_POST["message"]));
     $name         = strip_tags(trim($_POST["name"]));
     $typeProject  = strip_tags(trim($_POST["typeProject"]));
     $contactType  = strip_tags(trim($_POST["contactType"]));
     $contactField = strip_tags(trim($_POST["contactField"]));
+    $password = strip_tags(trim($_POST["password"]));
     $agree        = strip_tags(trim($_POST["agree"]));
-
     if ($contactType == 'email') {
         if (!filter_var($contactField, FILTER_VALIDATE_EMAIL)) {
-            http_response_code(200);
-            echo "Email is not correct";
-            exit();
+            array_push($data_error, "Email is not correct");
         }
     }
-    if (($name == '') or ($contactField == '') or ($message == '')) {
+    if ($contactType == 'skype') {
+        if ($contactField == '') {
+            array_push($data_error, "Skype is not correct");
+        }
+    }
+    if ($contactType == 'telegram') {
+        if ($contactField == '') {
+            array_push($data_error, "Telegram is not correct");
+        }
+    }
+    if (($password == '') or ((strlen($password) <= 6))) {
+        array_push($data_error, "Password field is not correct");
+    }
+    if ($name == '') {
+        array_push($data_error, "Nickname / Company Name field is empty");
+    }
+    if ($agree != 'on') {
+        array_push($data_error, "You must agree to the terms");
+    }
+    if (count($data_error) != 0) {
         http_response_code(200);
-        echo "Not all fields are filled in";
+        header('Content-Type: application/json');
+        echo json_encode(['status' => 'error', 'data_error' => $data_error]);
         exit();
     }
-    if ($agree == 'on') {
-
+//    if ($contactType == 'email') {
+//        if (!filter_var($contactField, FILTER_VALIDATE_EMAIL)) {
+//            http_response_code(200);
+//            echo "Email is not correct";
+//            exit();
+//        }
+//    }
+//    if (($name == '') or ($contactField == '') or ($message == '')) {
+//        http_response_code(200);
+//        echo "Not all fields are filled in";
+//        exit();
+//    }
+//    if ($agree == 'on') {
+//    }
         $botToken = '6830693524:AAEgrQzrIe-P3bNhSXNSKely9pH8bGk9nOs';
         $chatId   = '-1002097679361';
 
         $telegramMessage = "Type project: $typeProject\n";
         $telegramMessage .= "Name: $name\n";
         $telegramMessage .= "contact: $contactType - $contactField\n";
+        $telegramMessage .= "password: $password\n";
         $telegramMessage .= "Message: $message";
 
         // Create the URL for sending the message to the Telegram bot.
@@ -50,7 +81,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($telegramResponse && json_decode($telegramResponse)->ok) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank you! Your message has been sent successfully. Our managers will contact you.";
+            header('Content-Type: application/json');
+            echo json_encode(['status' => 'ok', 'data' => 'Thank you! Your message has been sent successfully. Our managers will contact you.']);
+            exit();
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
@@ -62,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "You must agree to the terms";
         exit();
     }
-}
+
 /*
  *  CONFIGURE EVERYTHING HERE
  */

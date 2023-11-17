@@ -4,9 +4,9 @@
 
 <!-- meta tags -->
 <meta charset="utf-8">
-<meta name="keywords" content="bootstrap 5, premium, multipurpose, business, startup, agency, portfolio, rtl" />
-<meta name="description" content="Startup Business Agency & Creative Portfolio Bootstrap5 Template" />
-<meta name="author" content="www.themeht.com" />
+  <meta name="keywords" content="Fanatics Affiliate" />
+  <meta name="description" content="Fanatics Affiliate" />
+  <meta name="author" content="www.fanaticsaffiliate.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
@@ -164,7 +164,7 @@
               <div class="col-md-6">
                 <h5>Emails</h5>
                 <p>
-                  <a href="mailto:themeht23@gmail.com">themeht23@gmail.com</a>
+                  <a href="mailto:info@fanaticsaffiliate.com">info@fanaticsaffiliate.com</a>
                 </p>
               </div>
             </div>
@@ -183,48 +183,39 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group mb-5">
-                    <select class="js-choice">
+                    <select class="js-choice type_project" name="typeProject">
                       <option value="affiliates">Affiliates</option>
                       <option value="advertiser">Advertiser</option>
                     </select>
-<!--                    <select class="form-control form-select" aria-label="Default select example" name="typeProject" required oninvalid="this.setCustomValidity('Please complete this field.')">-->
-<!--                      <option value="Affiliates">Affiliates</option>-->
-<!--                      <option value="Advertiser">Advertiser</option>-->
-<!--                    </select>-->
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group mb-5">
-                    <input class="form-control"  type="text" name="name" placeholder="Nickname / Company Name" required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
-                    <div class="help-block with-errors"></div>
+                    <input class="form-control"  type="text" name="name" placeholder="Nickname / Company Name">
+                    <div class="help-block with-errors name_error errors_br"></div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group mb-5">
-                    <select class="js-choice-mail">
+                    <select class="js-choice-mail" name="contactType">
                       <option value="email">Email</option>
                       <option value="telegram">Telegram</option>
                       <option value="skype">Skype</option>
                     </select>
-<!--                    <select class="form-control form-select" aria-label="Default select example" name="contactType" required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">-->
-<!--                      <option selected value="email">Email</option>-->
-<!--                      <option value="telegram">Telegram</option>-->
-<!--                      <option value="skype">Skype</option>-->
-<!--                    </select>-->
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="form-group mb-5">
-                    <input class="form-control" id="form_name2" type="text" name="contactField"   required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
-                    <div class="help-block with-errors"></div>
+                    <input class="form-control" id="form_name2" type="text" name="contactField">
+                    <div class="help-block with-errors contact_error errors_br"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group mb-5">
-                    <input type="password" id="password" name="password" pattern=".{6,}" placeholder="Password (6 characters):" title="Password must be at least 6 characters" required oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
-                    <div class="help-block with-errors"></div>
+                    <input type="password" id="password" name="password" pattern=".{6,}" placeholder="Password (6 characters):" title="Password must be at least 6 characters" oninvalid="this.setCustomValidity('Please complete this field.')" oninput="setCustomValidity('')">
+                    <div class="help-block with-errors password_error errors_br"></div>
                   </div>
                 </div>
               </div>
@@ -232,14 +223,16 @@
                 <textarea id="form_message" name="message" class="h-auto" placeholder="Message" rows="4"></textarea>
                 <div class="help-block with-errors"></div>
               </div>
-              <label>
-                <input type="checkbox" id="agreeCheckbox" name="agree">
-                I agree with <a class="line_link" href="terms-and-conditions.html">Terms and Conditions</a>, <a class="line_link" href="privacy-policy.html">Privacy & Policy</a>
-              </label>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="agreeCheckbox" name="agree">
+                  I agree with <a class="line_link" href="terms-and-conditions.html">Terms and Conditions</a>, <a class="line_link" href="privacy-policy.html">Privacy & Policy</a>
+                </label>
+                <div class="help-block with-errors agree_error errors_br"></div>
+              </div>
               <div class="message_send"></div>
               <div class="mt-5">
-                <button class="primary-btn">Send Messages
-                </button>
+                <button class="primary-btn">Send Messages</button>
               </div>
             </form>
           </div>

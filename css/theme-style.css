@@ -353,6 +353,7 @@ p { margin: 0 0 25px; }
     .theme-title p { font-size: 16px; }
     .page-title h1 { font-size: 30px; line-height: 30px; }
     .header-top, .right-nav { display: none !important; }
+    .banner-content { padding: 50px 0; }
     .counter span { font-size: 40px }
     blockquote { padding: 140px 20px 20px 20px !important; }
     blockquote:after { width: 100%; height: 100px; }
@@ -366,7 +367,7 @@ p { margin: 0 0 25px; }
     .service-item.style-1 { position: relative; }
     .service-list .service-item.style-1 .service-image { left: auto; right: 0; z-index: 9; width: 170px; top: 0; }
     .service-list .service-item.style-1.active .service-image { top: 0; }
-    .service-item.style-1 .rounded-button { position: relative; right: inherit; top: inherit; margin-top: 30px; }
+    .service-item.style-1 .rounded-button { position: relative;     margin-left: auto;margin-right: auto;right: inherit; top: inherit; margin-top: 30px; }
     .marquee-text { font-size: 60px; line-height: 80px; animation: marquee 10s linear infinite; }
     .round-text { width: 130px; height: 130px; }
     .text-btn-icon { font-size: 40px; }
@@ -386,7 +387,7 @@ p { margin: 0 0 25px; }
     .countdown > li span { font-size: 40px;}
 }
 @media (max-width:576px) {
-    h1 { font-size: 50px !important; line-height: 60px !important; }
+    h1 { font-size: 35px !important; line-height: 50px !important; }
     .theme-title h2 { font-size: 32px !important; line-height: 42px !important; }
 
     /*Banner*/

@@ -737,6 +737,10 @@ option{
 }
 
 @media (max-width:767px) {
+    .service-title h4{
+        text-align: center;
+    }
+
     .featured-item{
         text-align: center;
     }
@@ -829,4 +833,15 @@ option{
 
 .choices__list--dropdown .choices__item--selectable {
     padding-right: 0px;
+}
+
+
+.errors_br{
+    height: 10px;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+.service-title h4{
+    text-align: center;
 }

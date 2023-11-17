@@ -240,35 +240,41 @@ function contactform() {
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                success: function (data) {
+                success: function (response) {
+                    $('.contact_error').empty();
+                    $('.name_error').empty();
+                    $('.password_error').empty();
+                    $('.agree_error').empty();
                     $('.message_send').empty();
-                    if (data == 'Thank you! Your message has been sent successfully. Our managers will contact you.') {
-                        var targetElement = $('.message_send');
-                        $('#contact-form')[0].reset();
-                        var newDiv = $('<p style="color: green">' + data + ' </p>');
-                        targetElement.append(newDiv);
+                    if (response.status == 'error') {
+                        $.each(response.data_error, function (index, value) {
+                            if ((value == 'Telegram is not correct') || (value == 'Skype is not correct') || (value == 'Email is not correct')) {
+                                var targetElement = $('.contact_error');
+                                var newDiv = $('<p style="color: red">' + value + ' </p>');
+                                targetElement.append(newDiv);
+                            }
+                            if (value == 'Nickname / Company Name field is empty') {
+                                var targetElement = $('.name_error');
+                                var newDiv = $('<p style="color: red">' + value + ' </p>');
+                                targetElement.append(newDiv);
+                            }
+                            if (value == 'Password field is not correct') {
+                                var targetElement = $('.password_error');
+                                var newDiv = $('<p style="color: red">' + value + ' </p>');
+                                targetElement.append(newDiv);
+                            }
+                            if (value == 'You must agree to the terms') {
+                                var targetElement = $('.agree_error');
+                                var newDiv = $('<p style="color: red">' + value + ' </p>');
+                                targetElement.append(newDiv);
+                            }
+                        })
                     } else {
-                        var targetElement = $('.message_send');
-                        var newDiv = $('<p style="color: red">' + data + ' </p>');
-                        targetElement.append(newDiv);
+                        $('#contact-form')[0].reset();
+                            var targetElement = $('.message_send');
+                            var newDiv = $('<p style="color: green">' + response.data + ' </p>');
+                            targetElement.append(newDiv);
                     }
-
-                    // // data = JSON object that contact.php returns
-                    //
-                    // // we recieve the type of the message: success x danger and apply it to the
-                    // var messageAlert = 'alert-' + data.type;
-                    // var messageText = data.message;
-                    //
-                    // // let's compose Bootstrap alert box HTML
-                    // var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    //
-                    // // If we have messageAlert and messageText
-                    // if (messageAlert && messageText) {
-                    //     // inject the alert to .messages div in our form
-                    //     $('#contact-form').find('.messages').html(alertBox).show().delay(2000).fadeOut('slow');
-                    //     // empty the form
-                    //     $('#contact-form')[0].reset();
-                    // }
                 }
             });
             return false;
@@ -383,4 +389,11 @@ const choicesMail = new Choices(elementMail, {
     itemSelectText: ""
 });
 
-
+$(".type_project").change(function () {
+    $('#contact-form')[0].reset();
+    $('.contact_error').empty();
+    $('.name_error').empty();
+    $('.password_error').empty();
+    $('.agree_error').empty();
+    $('.message_send').empty();
+});
