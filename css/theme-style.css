@@ -398,3 +398,9 @@ p { margin: 0 0 25px; }
     .social-icons.footer-social li a { height: 45px; width: 45px; line-height: 45px; font-size: 26px; }
 }
 
+@media (max-width:389px) {
+    .banner-content .white-btn {
+        margin-left: 0px;
+    }
+}
+
