@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix logo" />
+    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 768 fix logo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms-and-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-and-conditions.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +94,8 @@
       <workItem from="1700059713157" duration="30000" />
       <workItem from="1700059758367" duration="1943000" />
       <workItem from="1700226747909" duration="2828000" />
+      <workItem from="1700470336463" duration="1056000" />
+      <workItem from="1700481189627" duration="806000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
