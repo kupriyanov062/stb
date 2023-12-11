@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 791 fix language">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-ua.html" afterDir="false" />
-    </list>
+    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 791 fix ukr language" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +106,7 @@
       <workItem from="1701783293543" duration="25864000" />
       <workItem from="1701846671593" duration="4275000" />
       <workItem from="1702026758078" duration="921000" />
-      <workItem from="1702284002731" duration="1919000" />
+      <workItem from="1702284002731" duration="2832000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
@@ -189,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702027071793</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cpad 791 fix ukr language">
+      <created>1702286209508</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702286209508</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +215,8 @@
     <MESSAGE value="cpad 768 fix logo" />
     <MESSAGE value="cpad 768 fix btn" />
     <MESSAGE value="cpad 791 fix language" />
-    <option name="LAST_COMMIT_MESSAGE" value="cpad 791 fix language" />
+    <MESSAGE value="cpad 791 fix ukr language" />
+    <option name="LAST_COMMIT_MESSAGE" value="cpad 791 fix ukr language" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
