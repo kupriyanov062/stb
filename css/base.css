@@ -906,6 +906,10 @@ option{
     }
 }
 
+.btn_width .primary-btn, .btn_width .white-btn{
+    width: 178px;
+}
+
 @media (max-width: 767px) {
     .navbar-brand.logo{
         width: 225px;
@@ -936,5 +940,22 @@ option{
     .font_s{
         font-size: 34px;
     }
-
+    .btn_width .primary-btn, .btn_width .white-btn{
+        width: 170px;
+        padding: 15px 30px;
+    }
 }
+
+@media (max-width: 374px) {
+    .navbar-brand.logo {
+        width: 210px;
+    }
+    .btn_width .primary-btn, .btn_width .white-btn {
+        width: 165px;
+    }
+}
+
+.language-switcher .choices__list--dropdown {
+    z-index: 99;
+}
+
