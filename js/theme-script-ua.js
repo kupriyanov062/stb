@@ -248,7 +248,7 @@ function contactform() {
                     $('.message_send').empty();
                     if (response.status == 'error') {
                         $.each(response.data_error, function (index, value) {
-                            if ((value == 'Telegram не правильний') || (value == 'Skype не правильний') || (value == 'Email не правильний')) {
+                            if ((value == 'Telegram не коректний') || (value == 'Skype не коректний') || (value == 'Email не коректний')) {
                                 var targetElement = $('.contact_error');
                                 var newDiv = $('<p style="color: red">' + value + ' </p>');
                                 targetElement.append(newDiv);
@@ -258,7 +258,7 @@ function contactform() {
                                 var newDiv = $('<p style="color: red">' + value + ' </p>');
                                 targetElement.append(newDiv);
                             }
-                            if (value == 'Поле пароля неправильне') {
+                            if (value == 'Пароль не коректний') {
                                 var targetElement = $('.password_error');
                                 var newDiv = $('<p style="color: red">' + value + ' </p>');
                                 targetElement.append(newDiv);

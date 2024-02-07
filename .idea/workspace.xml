@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 791 fix ukr language" />
+    <list default="true" id="5ba0102d-65cc-43ed-a994-b8459fcf3982" name="Changes" comment="cpad 791 fix ukr language">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advertiser-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/advertiser-ua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advertiser.html" beforeDir="false" afterPath="$PROJECT_DIR$/advertiser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/affiliates-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/affiliates-ua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/affiliates.html" beforeDir="false" afterPath="$PROJECT_DIR$/affiliates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-ua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-ua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/theme-script-ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/theme-script-ua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/contact-ua.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/contact-ua.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy-ua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms-and-conditions.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-and-conditions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms-ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/terms-ua.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +124,12 @@
       <workItem from="1701846671593" duration="4275000" />
       <workItem from="1702026758078" duration="921000" />
       <workItem from="1702284002731" duration="2832000" />
+      <workItem from="1702375279153" duration="798000" />
+      <workItem from="1702451021115" duration="57000" />
+      <workItem from="1702463224761" duration="579000" />
+      <workItem from="1702481300460" duration="383000" />
+      <workItem from="1702631183748" duration="2131000" />
+      <workItem from="1707331188044" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1699545045054</created>
@@ -192,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702286209508</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="cpad 791 fix ukr language">
+      <created>1702375465523</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702375465523</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

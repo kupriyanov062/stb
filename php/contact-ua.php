@@ -11,21 +11,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $agree        = strip_tags(trim($_POST["agree"]));
     if ($contactType == 'email') {
         if (!filter_var($contactField, FILTER_VALIDATE_EMAIL)) {
-            array_push($data_error, "Email не правильний");
+            array_push($data_error, "Email не коректний");
         }
     }
     if ($contactType == 'skype') {
         if ($contactField == '') {
-            array_push($data_error, "Skype не правильний");
+            array_push($data_error, "Skype не коректний");
         }
     }
     if ($contactType == 'telegram') {
         if ($contactField == '') {
-            array_push($data_error, "Telegram не правильний");
+            array_push($data_error, "Telegram не коректний");
         }
     }
     if (($password == '') or ((strlen($password) <= 6))) {
-        array_push($data_error, "Поле пароля неправильне");
+        array_push($data_error, "Пароль не коректний");
     }
     if ($name == '') {
         array_push($data_error, "Поле псевдонім/назва компанії порожнє");
